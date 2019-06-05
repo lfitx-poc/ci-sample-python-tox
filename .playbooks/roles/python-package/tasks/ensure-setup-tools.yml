@@ -1,0 +1,4 @@
+---
+- name: Ensure Setup Tools are installed
+  pip:
+    name: setuptools,wheel

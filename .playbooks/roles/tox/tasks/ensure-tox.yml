@@ -1,0 +1,4 @@
+---
+- name: Ensure Tox is installed
+  pip:
+    name: tox

@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Run Tox
+      include_role:
+        name: tox
+      vars:
+        ensure_tox: true
+    - name: Run Python Package
+      include_role:
+        name: python-package
+      vars:
+        ensure_python_tools: true
