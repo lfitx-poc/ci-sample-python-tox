@@ -1,0 +1,4 @@
+---
+- name: Ensure Twine is installed
+  pip:
+    name: twine

@@ -1,0 +1,5 @@
+---
+- name: Python Package - Run
+  shell: "python3 setup.py sdist bdist_wheel"
+  args:
+    chdir: "{{ workdir }}"
