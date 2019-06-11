@@ -1,20 +1,22 @@
 ---
-image: python:3
 
 tox:
   stage: verify
+  image: python:3
   script:
     - pip install tox
     - tox
 
 build:
   stage: build
+  image: python:3
   script:
     - pip install setuptools,wheel
     - python setup.py sdist bdist_wheel
 
 publish:
   stage: publish
+  image: python:3
   variables:
       TWINE_USERNAME: $PYPI_TEST_USERNAME
       TWINE_PASSWORD: $PYPI_TEST_PASSWORD
