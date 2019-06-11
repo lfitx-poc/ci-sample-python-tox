@@ -11,7 +11,7 @@ build:
   stage: build
   image: python:3
   script:
-    - pip install setuptools,wheel
+    - pip install setuptools wheel
     - python setup.py sdist bdist_wheel
 
 publish:
