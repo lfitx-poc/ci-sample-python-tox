@@ -1,8 +1,0 @@
----
-- hosts: localhost
-  tasks:
-    - name: Trigger RTD Build
-      include_role:
-        name: rtd
-      vars:
-        task: merge

@@ -1,8 +1,0 @@
----
-- hosts: localhost
-  tasks:
-    - name: Run Twine
-      include_role:
-        name: twine
-      vars:
-        ensure_twine: true

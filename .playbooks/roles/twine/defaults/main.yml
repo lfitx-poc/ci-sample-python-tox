@@ -1,8 +1,0 @@
----
-ensure_twine: false
-workdir: "{{ playbook_dir | dirname }}"
-# only using test url for now
-twine_cli_opts: "{{ lookup('env', 'TWINE_CLI_OPTS')
-                | default('upload --repository-url https://test.pypi.org/legacy/ dist/*') }}"
-twine_username: "{{ lookup('env', 'TWINE_USERNAME') | default('') }}"
-twine_password: "{{ lookup('env', 'TWINE_PASSWORD') | default('') }}"

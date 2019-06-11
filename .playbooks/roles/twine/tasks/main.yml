@@ -1,9 +1,0 @@
----
-- name: Ensure Twine is Installed
-  when: ensure_twine
-  include_tasks: ensure-twine.yml
-
-- name: Twine - Run
-  shell: "twine {{ twine_cli_opts }}"
-  args:
-    chdir: "{{ workdir }}"

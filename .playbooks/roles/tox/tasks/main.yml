@@ -1,9 +1,0 @@
----
-- name: Ensure Tox is Installed
-  when: ensure_tox
-  include_tasks: ensure-tox.yml
-
-- name: Tox - Run
-  shell: "tox {{ tox_cli_opts }}"
-  args:
-    chdir: "{{ workdir }}"

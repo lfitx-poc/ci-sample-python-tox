@@ -1,3 +1,0 @@
----
-ensure_setup_tools: false
-workdir: "{{ playbook_dir | dirname }}"

@@ -1,5 +1,0 @@
----
-ensure_tox: false
-workdir: "{{ playbook_dir | dirname }}"
-tox_cli_opts: "{{ lookup('env', 'TOX_CLI_OPTS')
-               | default('') }}"
