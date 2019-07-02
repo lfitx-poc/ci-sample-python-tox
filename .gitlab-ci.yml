@@ -4,9 +4,8 @@ image: alpine:latest
 stages:
   - verify
   - build
-  - test
-  - stage
-  - release
+  - publish
+  - docs
 
 include:
   - local: .gitlab-templates/python-ci.yml
