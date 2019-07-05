@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="ci-sample-python-tox",
-    version="0.1",
+    version="1.0",
     packages=["helloworld"],
     author="linux foundation",
 )
