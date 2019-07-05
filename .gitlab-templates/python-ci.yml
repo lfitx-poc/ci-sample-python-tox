@@ -14,10 +14,14 @@ build:
     - pip install setuptools wheel
   script:
     - python setup.py sdist bdist_wheel
+  artifacts:
+    untracked: true
 
 publish:
   stage: publish
   image: python:3
+  dependencies: 
+    - build
   variables:
       TWINE_URL: $PYPI_URL
       TWINE_USERNAME: $PYPI_USERNAME
