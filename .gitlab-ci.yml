@@ -5,6 +5,7 @@ stages:
   - verify
   - build
   - publish
+  - docker
   - docs
 
 include:
