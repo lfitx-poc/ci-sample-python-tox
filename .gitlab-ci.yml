@@ -9,3 +9,4 @@ stages:
 
 include:
   - local: .gitlab-templates/python-ci.yml
+  - local: .gitlab-templates/docker-ci.yml
