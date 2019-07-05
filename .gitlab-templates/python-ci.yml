@@ -27,5 +27,4 @@ publish:
   script:
     - twine upload --repository-url $PYPI_URL dist/*
   only:
-    # using notMaster for testing without having to merge PR to master
-    - notMaster
+    - master
